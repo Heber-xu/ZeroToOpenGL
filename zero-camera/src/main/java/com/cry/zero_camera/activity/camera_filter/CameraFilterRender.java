@@ -57,7 +57,8 @@ public class CameraFilterRender implements GLSurfaceView.Renderer {
 
     public CameraFilterRender(Resources res) {
         mOesFilter = new OesRecordFilter(res);
-        mColorFilter = new ColorFiler(ColorFiler.Filter.COOL);
+//        mColorFilter = new ColorFiler(ColorFiler.Filter.COOL);
+        mColorFilter = new ColorFiler(ColorFiler.Filter.GRAY);
         mShowFilter = new ColorFiler(ColorFiler.Filter.NONE);
         mVideoEncoder = new TextureMovieEncoder2D();
     }
